@@ -1,0 +1,105 @@
+body{
+   background-color:  hsl(217, 54%, 11%);
+   color:hsl(215, 32%, 27%);
+   font-family: 'Outfit', sans-serif;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.card{
+    width: 250px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+    padding: 1rem;
+}
+.title{
+    font-size: 1rem;
+}
+.title,.author-text{
+    color:hsl(0, 0%, 100%);
+    
+}
+.icon-ethereum,.icon-clock{
+    margin-right: 0.3rem;   
+}
+.ethereum,.clock{
+    display: flex;
+    align-items: center;
+}
+.equilibrium-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-image{
+    width: 250px;
+}
+.image{
+    width: 250px;
+    border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+
+}
+.title:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.image:hover{
+    background-color: hsl(215, 51%, 70%);
+}
+p,.days{
+    color: hsl(215, 51%, 70%);
+}
+.sub-info{
+    font-size: 0.7rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+.author-info{
+    width: 2rem;
+    margin-right: 0.6rem;
+    border: 0.1rem  hsl(0, 0%, 100%);
+    border-radius: 100%;
+    border-style:groove;
+
+   
+}.author-text{
+    color: hsl(0, 0%, 100%);;
+    font-size: 13px;
+}
+.equilibrium-text{
+    font-size: 14px
+}
+.jules:hover{
+   color: hsl(178, 100%, 50%);
+   cursor: pointer;
+}
+.card-image{
+    position: relative;
+}
+.noshow{
+    
+    background-image: url('./images/icon-view.svg');
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.noshow:hover{
+    position: absolute;
+    display: block;
+    
+    z-index: 99;
+   
+}
