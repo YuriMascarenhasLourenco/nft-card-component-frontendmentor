@@ -34,11 +34,15 @@ body{
 }
 .card-image{
     width: 250px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
 }
 .image{
-    width: 250px;
+    width: 100%;
     border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
 }
+
 .info{
     display: flex;
     justify-content: space-between;
@@ -83,23 +87,19 @@ p,.days{
    color: hsl(178, 100%, 50%);
    cursor: pointer;
 }
-.card-image{
-    position: relative;
-}
-.noshow{
-    
+.no-show{
     background-image: url('./images/icon-view.svg');
-    background-color: hsl(178, 100%, 50%);
+    background-color: hsla(178, 100%, 50%,.6);
+    display: none;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-position: center;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
-.noshow:hover{
-    position: absolute;
+.card-image:hover .no-show{
     display: block;
-    
     z-index: 99;
-   
 }
